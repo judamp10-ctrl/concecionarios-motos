@@ -496,7 +496,7 @@ function Index() {
       </section>
 
       {/* OPINIONES */}
-      <section id="opiniones" className="relative py-24 sm:py-32 bg-card/30 border-y border-border">
+      <section id="opiniones" className="fade-section relative py-24 sm:py-32 bg-card/30 border-y border-border transition-opacity duration-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-wrap items-end justify-between gap-6 mb-12" data-reveal>
             <div>
