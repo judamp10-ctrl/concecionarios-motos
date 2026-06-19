@@ -409,7 +409,7 @@ function Index() {
       </section>
 
       {/* BENEFICIOS WEB */}
-      <section className="relative py-24 sm:py-32">
+      <section className="fade-section relative py-24 sm:py-32 transition-opacity duration-200">
         <div className="absolute inset-0 bg-[var(--gradient-radial-red)]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="max-w-3xl mb-14" data-reveal>
