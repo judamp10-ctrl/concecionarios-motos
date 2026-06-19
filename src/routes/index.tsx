@@ -346,7 +346,7 @@ function Index() {
       </section>
 
       {/* INVENTARIO DEMO */}
-      <section className="relative py-24 sm:py-32 border-y border-border bg-card/30">
+      <section className="fade-section relative py-24 sm:py-32 border-y border-border bg-card/30 transition-opacity duration-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-wrap items-end justify-between gap-6 mb-12" data-reveal>
             <div>
