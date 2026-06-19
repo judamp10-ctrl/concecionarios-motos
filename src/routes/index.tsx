@@ -26,13 +26,13 @@ import ctaFinal from "@/assets/cta-final.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "YamaMotors Bucaramanga · Motos, cuatrimotos y asesoría" },
+      { title: "YourMotors Bucaramanga · Motos, cuatrimotos y asesoría" },
       {
         name: "description",
         content:
           "Concesionario de motos en Bucaramanga. Motos para adultos, niños y cuatrimotos. Asesoría, retiro en tienda y entrega a domicilio. Escríbenos por WhatsApp.",
       },
-      { property: "og:title", content: "YamaMotors Bucaramanga" },
+      { property: "og:title", content: "YourMotors Bucaramanga" },
       {
         property: "og:description",
         content: "Motos, cuatrimotos y asesoría personalizada en Bucaramanga.",
@@ -686,7 +686,7 @@ function Index() {
               Demo visual creada para mostrar cómo podría verse una presencia digital profesional
               para el negocio.
             </p>
-            <p>© {new Date().getFullYear()} YamaMotors Bucaramanga</p>
+            <p>© {new Date().getFullYear()} YourMotors Bucaramanga</p>
           </div>
         </div>
       </footer>
