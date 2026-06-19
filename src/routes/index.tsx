@@ -169,7 +169,7 @@ function Index() {
       </header>
 
       {/* HERO */}
-      <section id="top" className="relative min-h-[100svh] flex items-center pt-16">
+      <section id="top" className="fade-section relative min-h-[100svh] flex items-center pt-16 transition-opacity duration-200">
         <img
           src={heroMoto}
           alt="Moto deportiva en showroom con luces neón"
@@ -234,7 +234,7 @@ function Index() {
       </section>
 
       {/* CATEGORIAS */}
-      <section id="motos" className="relative py-24 sm:py-32">
+      <section id="motos" className="fade-section relative py-24 sm:py-32 transition-opacity duration-200">
         <div className="absolute inset-0 bg-[var(--gradient-radial-blue)]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="max-w-2xl mb-14" data-reveal>
@@ -311,7 +311,7 @@ function Index() {
       </section>
 
       {/* INVENTARIO DEMO */}
-      <section className="relative py-24 sm:py-32 border-y border-border bg-card/30">
+      <section className="fade-section relative py-24 sm:py-32 border-y border-border bg-card/30 transition-opacity duration-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-wrap items-end justify-between gap-6 mb-12" data-reveal>
             <div>
@@ -374,7 +374,7 @@ function Index() {
       </section>
 
       {/* BENEFICIOS WEB */}
-      <section className="relative py-24 sm:py-32">
+      <section className="fade-section relative py-24 sm:py-32 transition-opacity duration-200">
         <div className="absolute inset-0 bg-[var(--gradient-radial-red)]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="max-w-3xl mb-14" data-reveal>
@@ -431,7 +431,7 @@ function Index() {
       </section>
 
       {/* FINANCIACION / ASESORIA */}
-      <section id="financiacion" className="relative py-24 sm:py-32 border-t border-border">
+      <section id="financiacion" className="fade-section relative py-24 sm:py-32 border-t border-border transition-opacity duration-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 grid lg:grid-cols-2 gap-14 items-start">
           <div data-reveal>
             <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Asesoría</p>
@@ -461,7 +461,7 @@ function Index() {
       </section>
 
       {/* OPINIONES */}
-      <section id="opiniones" className="relative py-24 sm:py-32 bg-card/30 border-y border-border">
+      <section id="opiniones" className="fade-section relative py-24 sm:py-32 bg-card/30 border-y border-border transition-opacity duration-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-wrap items-end justify-between gap-6 mb-12" data-reveal>
             <div>
@@ -521,7 +521,7 @@ function Index() {
       </section>
 
       {/* UBICACION */}
-      <section id="ubicacion" className="relative py-24 sm:py-32">
+      <section id="ubicacion" className="fade-section relative py-24 sm:py-32 transition-opacity duration-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 grid lg:grid-cols-2 gap-10 items-stretch">
           <div data-reveal>
             <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Ubicación</p>
@@ -599,7 +599,7 @@ function Index() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="relative py-28 sm:py-36 overflow-hidden">
+      <section className="fade-section relative py-28 sm:py-36 overflow-hidden transition-opacity duration-200">
         <img
           src={ctaFinal}
           alt="Moto recorriendo la ciudad de noche"
