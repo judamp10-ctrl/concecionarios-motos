@@ -82,37 +82,8 @@ function useReveal() {
   return ref;
 }
 
-function useSectionFade(containerRef: React.RefObject<HTMLDivElement | null>) {
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-    const sections = container.querySelectorAll<HTMLElement>(".fade-section");
-
-    const onScroll = () => {
-      const vh = window.innerHeight;
-      const fadeRange = vh * 0.35;
-      sections.forEach((section) => {
-        const rect = section.getBoundingClientRect();
-        const top = rect.top;
-        const bottom = rect.bottom;
-        const center = top + rect.height / 2;
-        const viewportCenter = vh / 2;
-        const dist = Math.abs(center - viewportCenter);
-        const maxDist = vh * 0.75 + rect.height / 2;
-        let opacity = 1 - dist / maxDist;
-        section.style.opacity = String(Math.max(0.15, Math.min(1, opacity)));
-      });
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [containerRef]);
-}
-
 function Index() {
   const containerRef = useReveal();
-  useSectionFade(containerRef);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
