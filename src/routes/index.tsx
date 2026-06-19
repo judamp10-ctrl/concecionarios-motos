@@ -90,22 +90,18 @@ function useSectionFade(containerRef: React.RefObject<HTMLDivElement | null>) {
 
     const onScroll = () => {
       const vh = window.innerHeight;
-      const fadeRange = vh * 0.35;
+      const fadeRange = vh * 0.4;
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        const top = rect.top;
         const bottom = rect.bottom;
 
         let opacity = 1;
-        if (bottom < 0 || top > vh) {
+        if (bottom < 0) {
           opacity = 0;
-        } else {
-          if (top > vh * 0.5) {
-            opacity = 1 - (top - vh * 0.5) / fadeRange;
-          } else if (bottom < vh * 0.5) {
-            opacity = (bottom - vh * 0.15) / fadeRange;
-          }
+        } else if (bottom < fadeRange) {
+          opacity = bottom / fadeRange;
         }
+
         section.style.opacity = String(Math.max(0, Math.min(1, opacity)));
       });
     };
