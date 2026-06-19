@@ -466,7 +466,7 @@ function Index() {
       </section>
 
       {/* FINANCIACION / ASESORIA */}
-      <section id="financiacion" className="relative py-24 sm:py-32 border-t border-border">
+      <section id="financiacion" className="fade-section relative py-24 sm:py-32 border-t border-border transition-opacity duration-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 grid lg:grid-cols-2 gap-14 items-start">
           <div data-reveal>
             <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Asesoría</p>
