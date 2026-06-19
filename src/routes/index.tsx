@@ -634,7 +634,7 @@ function Index() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="relative py-28 sm:py-36 overflow-hidden">
+      <section className="fade-section relative py-28 sm:py-36 overflow-hidden transition-opacity duration-200">
         <img
           src={ctaFinal}
           alt="Moto recorriendo la ciudad de noche"
