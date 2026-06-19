@@ -26,13 +26,13 @@ import ctaFinal from "@/assets/cta-final.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "YamaMotors Bucaramanga · Motos, cuatrimotos y asesoría" },
+      { title: "YourMotors Bucaramanga · Motos, cuatrimotos y asesoría" },
       {
         name: "description",
         content:
           "Concesionario de motos en Bucaramanga. Motos para adultos, niños y cuatrimotos. Asesoría, retiro en tienda y entrega a domicilio. Escríbenos por WhatsApp.",
       },
-      { property: "og:title", content: "YamaMotors Bucaramanga" },
+      { property: "og:title", content: "YourMotors Bucaramanga" },
       {
         property: "og:description",
         content: "Motos, cuatrimotos y asesoría personalizada en Bucaramanga.",
@@ -43,8 +43,8 @@ export const Route = createFileRoute("/")({
 });
 
 const WHATSAPP_URL = "https://wa.me/573006141546";
-const PHONE = "300 6141546";
-const ADDRESS = "Cra. 33 #97-13, Sotomayor, Bucaramanga, Santander";
+const PHONE = "xxxxxxxxx";
+const ADDRESS = "Ubicacion";
 const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=Cra.+33+%2397-13+Sotomayor+Bucaramanga";
 
@@ -116,7 +116,7 @@ function Index() {
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 h-16 flex items-center justify-between">
           <a href="#top" className="font-display font-black tracking-widest text-lg">
-            YAMA<span className="text-gradient-brand">MOTORS</span>
+            YOUR<span className="text-gradient-brand">MOTORS</span>
           </a>
           <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-muted-foreground">
             {navLinks.map((l) => (
@@ -186,7 +186,7 @@ function Index() {
           <div className="max-w-3xl" data-reveal>
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 backdrop-blur px-3 py-1 text-xs uppercase tracking-widest text-muted-foreground mb-6">
               <span className="size-1.5 rounded-full bg-accent animate-pulse" />
-              Yamaha Distribuidora Central de Motos · Bucaramanga
+              DISTRIBUIDORA CENTRAL DE MOTOS · BUCARAMANGA
             </div>
             <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-tight">
               Tu próxima moto
@@ -587,8 +587,8 @@ function Index() {
                 </div>
               </div>
               <div className="mt-4 rounded-xl border border-border bg-background/90 backdrop-blur px-4 py-2 text-sm font-medium text-center">
-                YamaMotors Bucaramanga
-                <div className="text-xs text-muted-foreground">Sotomayor · Cra. 33</div>
+                YourMotors Bucaramanga
+                <div className="text-xs text-muted-foreground">Ubicacion</div>
               </div>
             </div>
             <div className="absolute bottom-4 right-4 text-[10px] uppercase tracking-widest text-muted-foreground">
@@ -635,13 +635,13 @@ function Index() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-2">
             <div className="font-display font-black text-xl tracking-widest">
-              YAMA<span className="text-gradient-brand">MOTORS</span>
+              YOUR<span className="text-gradient-brand">MOTORS</span>
             </div>
             <p className="mt-3 text-sm text-muted-foreground max-w-sm">
               Motos, cuatrimotos y asesoría en Bucaramanga.
             </p>
             <p className="mt-4 text-sm text-muted-foreground">{ADDRESS}</p>
-            <p className="text-sm text-muted-foreground">WhatsApp: {PHONE}</p>
+            <p className="text-sm text-muted-foreground">WhatsApp: xxx xxx xxxx</p>
           </div>
           <div>
             <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">Explorar</p>
@@ -686,7 +686,7 @@ function Index() {
               Demo visual creada para mostrar cómo podría verse una presencia digital profesional
               para el negocio.
             </p>
-            <p>© {new Date().getFullYear()} YamaMotors Bucaramanga</p>
+            <p>© {new Date().getFullYear()} YourMotors Bucaramanga</p>
           </div>
         </div>
       </footer>
