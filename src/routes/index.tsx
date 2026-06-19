@@ -82,6 +82,40 @@ function useReveal() {
   return ref;
 }
 
+function useSectionFade(containerRef: React.RefObject<HTMLDivElement | null>) {
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    const sections = container.querySelectorAll<HTMLElement>(".fade-section");
+
+    const onScroll = () => {
+      const vh = window.innerHeight;
+      const fadeRange = vh * 0.35;
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        const top = rect.top;
+        const bottom = rect.bottom;
+
+        let opacity = 1;
+        if (bottom < 0 || top > vh) {
+          opacity = 0;
+        } else {
+          if (top > vh * 0.5) {
+            opacity = 1 - (top - vh * 0.5) / fadeRange;
+          } else if (bottom < vh * 0.5) {
+            opacity = (bottom - vh * 0.15) / fadeRange;
+          }
+        }
+        section.style.opacity = String(Math.max(0, Math.min(1, opacity)));
+      });
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [containerRef]);
+}
+
 function Index() {
   const containerRef = useReveal();
   const [menuOpen, setMenuOpen] = useState(false);
