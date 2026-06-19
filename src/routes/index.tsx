@@ -118,6 +118,7 @@ function useSectionFade(containerRef: React.RefObject<HTMLDivElement | null>) {
 
 function Index() {
   const containerRef = useReveal();
+  useSectionFade(containerRef);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
