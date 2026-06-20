@@ -169,7 +169,7 @@ function Index() {
       </header>
 
       {/* HERO */}
-      <section id="top" className="fade-section relative min-h-[100svh] flex items-center pt-16 transition-opacity duration-200">
+      <section id="top" className="fade-section-bottom relative min-h-[100svh] flex items-center pt-16">
         <img
           src={heroMoto}
           alt="Moto deportiva en showroom con luces neón"
