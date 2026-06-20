@@ -203,3 +203,41 @@
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
 }
+
+/*
+ * Soft fade between sections — masks the top and bottom edges
+ * so consecutive sections blend instead of cutting hard.
+ * Pure CSS, no JS, respects scroll position.
+ */
+@utility fade-section {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    black 96px,
+    black calc(100% - 96px),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    black 96px,
+    black calc(100% - 96px),
+    transparent 100%
+  );
+}
+
+/* Skip the top fade on the first section (hero) so it reaches the navbar. */
+@utility fade-section-bottom {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0,
+    black calc(100% - 96px),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    black 0,
+    black calc(100% - 96px),
+    transparent 100%
+  );
+}
